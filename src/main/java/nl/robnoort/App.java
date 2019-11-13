@@ -1,7 +1,5 @@
 package nl.robnoort;
 
-import java.io.IOException;
-
 /**
  * Hello world!
  *
@@ -12,15 +10,18 @@ public class App {
 
         App app = new App();
         
+        app.startTestExceptions();
+
+    }
+
+    public void startTestExceptions () {
         try {
-            app.testExceptions();
+            this.testExceptions();
         } catch (CannotSwimException e) {
             e.printStackTrace();
             throw new RuntimeException("hier");
         }
-
     }
-
     public void testExceptions() throws CannotSwimException {
         try {
             throw new CannotSwimException(" kan niet zwemmen ");
@@ -32,7 +33,7 @@ public class App {
 
     }
 
-    class CannotSwimException  extends Exception {
+    class CannotSwimException  extends Error {
         
         public CannotSwimException(String message) {
             super(message);
