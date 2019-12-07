@@ -1,5 +1,9 @@
 package nl.robnoort;
 
+import java.io.IOException;
+
+import nl.robnoort.streams.FlatMapExamples;
+
 /**
  * Hello world!
  *
@@ -10,7 +14,15 @@ public class App {
 
         App app = new App();
         
-        app.startTestExceptions();
+   //     app.startTestExceptions();
+
+        try {
+        FlatMapExamples.main(null);
+        }
+        catch (IOException ex){
+            System.out.println(ex.getMessage());
+            throw new RuntimeException(ex.getMessage());
+        }
 
     }
 
