@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ClassDesign",
+            "request": "launch",
+            "mainClass": "nl.robnoort.classes.ClassDesign",
+            "projectName": "ocp-practice"
+        },
+        {
+            "type": "java",
             "name": "Debug (Attach)",
             "request": "attach",
             "hostName": "localhost",

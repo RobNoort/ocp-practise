@@ -2,9 +2,13 @@ package nl.robnoort.classes;
 
 public class ClassDesign {
 
-    static class Nested {
+    public int price = 1;
+    public void printPrice(){ System.out.println(" Printing in ClassDesign "+ price);}
+
+    static class Nested extends SubClassDesign {
         public static int price = 6;
         private int privPrice = 7;
+        public void printPrice(){ System.out.println(" Printing in Nested "+ price);}
     }
 
     public static void main(String[] args) {
@@ -28,12 +32,16 @@ public class ClassDesign {
         SubClassDesign md2 = new SubClassDesign();
         io = md2 instanceof SubClassDesign; //true
         System.out.println("instantiated MD " + io);
+        System.out.println(" price of SD " + Integer.valueOf(md2.price));
         io = md2 instanceof ClassDesign; //true
         System.out.println("also super CD?  " + io);
+        md2.printPrice();
     }
 }
 
 class SubClassDesign extends ClassDesign {
+    public int price = 9;
+   public void printPrice(){ System.out.println(" Printing in SubClassDesign "+ price);}
 }
 
 enum Season {
