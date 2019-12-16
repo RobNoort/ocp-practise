@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AnimalInterface",
+            "request": "launch",
+            "mainClass": "nl.robnoort.classes.interfacetrial.AnimalInterface",
+            "projectName": "ocp-practice"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindMatchingAnimals",
+            "request": "launch",
+            "mainClass": "nl.robnoort.classes.interfacetrial.FindMatchingAnimals",
+            "projectName": "ocp-practice"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Shakespeare",
             "request": "launch",
             "mainClass": "nl.robnoort.streams.Shakespeare",
