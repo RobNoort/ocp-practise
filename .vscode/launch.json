@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Shakespeare",
+            "request": "launch",
+            "mainClass": "nl.robnoort.streams.Shakespeare",
+            "projectName": "ocp-practice"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FlatMapExamples",
+            "request": "launch",
+            "mainClass": "nl.robnoort.streams.FlatMapExamples",
+            "projectName": "ocp-practice"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StandardClass",
+            "request": "launch",
+            "mainClass": "nl.robnoort.classes.StandardClass",
+            "projectName": "ocp-practice"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ClassDesign",
             "request": "launch",
             "mainClass": "nl.robnoort.classes.ClassDesign",

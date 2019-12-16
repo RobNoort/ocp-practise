@@ -46,7 +46,7 @@ public class StandardClass {
 
         // create an unmodifiable set of this set
         Set<String> unmodifiableSet = Collections.unmodifiableSet(set);
-        unmodifiableSet.add("Costa Rica"); //runtime error java.lang.UnsupportedOperationException
+      //  unmodifiableSet.add("Costa Rica"); //runtime error java.lang.UnsupportedOperationException
 
     }
 
