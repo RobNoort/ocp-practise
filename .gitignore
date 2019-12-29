@@ -1,1 +1,4 @@
-target/**
+ocp-practice.iml
+target
+.idea
+
