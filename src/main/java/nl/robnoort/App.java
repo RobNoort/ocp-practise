@@ -17,11 +17,12 @@ public class App {
         App app = new App();
         
    //     app.startTestExceptions();
+        app.testEquals();
 
         try {
         FlatMapExamples.main(null);
         }
-        catch (IOException ex){
+        catch (Exception ex){
             System.out.println(ex.getMessage());
             throw new RuntimeException(ex.getMessage());
         }
@@ -45,6 +46,15 @@ public class App {
             throw new RuntimeException(ex.getMessage());
         }
 
+    }
+    public void testEquals() {
+
+        String s1 = "lion";
+        String s2 = "lion";
+        System.out.println(s1.equals(s2));       // true equal method checks content
+        StringBuilder sb1 = new StringBuilder("lion");
+        StringBuilder sb2 = new StringBuilder("lion");
+        System.out.println(sb1.equals(sb2));   // false equals method from Object, so checks reference
     }
 
     class CannotSwimException  extends Error {
